@@ -51,38 +51,7 @@ public class Quartz extends HttpServlet {
 			Context envContext = (Context) initContext.lookup("java:/comp/env");
 			DataSource ds = (DataSource) envContext.lookup("jdbc/Oracle11g");
 			conn = ds.getConnection();
-			
-			/*schedulerFactory = new StdSchedulerFactory();
-			scheduler = schedulerFactory.getScheduler();
-			scheduler.start();
-			// insert 20√ 
-			JobDetail job = JobBuilder.newJob(InsertQuartz.class)
-									  .withIdentity("job", "group")
-									  .build();
 
-			SimpleTrigger simpleTigger = TriggerBuilder.newTrigger()
-													   .withIdentity("trigger", "group")
-													   .startNow()
-													   .withSchedule(SimpleScheduleBuilder.simpleSchedule()	
-													   .withIntervalInSeconds(20)
-													   .repeatForever())
-													   .build();
-			scheduler.scheduleJob(job, simpleTigger);
-			
-			// update 30√ 
-			JobDetail job1 = JobBuilder.newJob(UpdateQuartz.class)
-									   .withIdentity("job1", "group1")
-									   .build();
-
-			SimpleTrigger simpleTigger1 = TriggerBuilder.newTrigger()
-														.withIdentity("trigger1", "group1")
-														.startNow()
-														.withSchedule(SimpleScheduleBuilder.simpleSchedule()
-														.withIntervalInSeconds(30)
-														.repeatForever())
-														.build();
-			scheduler.scheduleJob(job1, simpleTigger1);*/
-			
 			List<QuartzVO> list = getquartzList(conn);
 
 			Gson gson = new Gson();

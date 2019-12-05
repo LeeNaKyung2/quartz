@@ -19,7 +19,7 @@ public class InsertQuartz implements Job{
 	
 	public InsertQuartz() {
 	}
-
+	
 	@Override
 	public void execute(JobExecutionContext execute) throws JobExecutionException {
 	    try {

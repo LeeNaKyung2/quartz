@@ -29,7 +29,7 @@ public class QuartzStart1 extends HttpServlet {
  
 	private SchedulerFactory schedulerFactory;
 	Connection conn = null;
-
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");

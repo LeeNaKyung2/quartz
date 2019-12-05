@@ -37,7 +37,4 @@ public class QuartzVO {
 	public void setType2_Time(String type2_Time) {
 		Type2_Time = type2_Time;
 	}
-	
-	
-
 }

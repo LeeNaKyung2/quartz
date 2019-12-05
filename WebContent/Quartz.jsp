@@ -34,7 +34,6 @@
 	 
 	 </div>
 		<h2>● 실행 목록 </h2>
-		
 		 <div id='quartzList'></div>
 	 <script>
 	 

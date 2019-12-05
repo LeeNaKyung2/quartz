@@ -19,7 +19,7 @@ public class UpdateQuartz implements Job {
 
 	public UpdateQuartz() {
 	}
-
+	
 	@Override
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
 		try {
